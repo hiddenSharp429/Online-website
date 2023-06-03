@@ -1,0 +1,95 @@
+
+  li { list-style: none; } 
+  #wrap {
+    z-index: 999;
+    position: fixed;
+   
+    width: 100%;
+  }
+  
+  #wrap>ul {
+    border-top: 1px solid#c3e5ea;
+    border-bottom: 1px solid#c3e5ea;
+    border-radius: 50px;
+    border-width:5px;
+    width: 1080px;
+    height: 74px;
+    margin: 0px auto;
+    
+  }
+  
+  #wrap>ul>li {
+    position: relative;
+    z-index: 99;
+    left: 20px;
+    float: left;
+    width: 150px;
+    height: 65px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    text-align: center;
+    padding-top: 20px;
+    /* cursor: pointer; */
+    user-select: none;
+    border: 2px;
+  }
+  
+  #wrap>ul>li>a{
+    color: rgb(249, 242, 242);
+    text-decoration: none;
+    width: 500px;
+  }
+  
+  #wrap span {
+    display: block;
+    color: #e4dada;
+    font-size: 12px;    
+  }
+  /* 导航栏常年固定不变的 */
+  /* #wrap>ul>li.on>a {
+    color:#000;
+  }
+  
+  #wrap>ul>li.on>a>span {
+    color:#000;
+  }
+   */
+  #wrap>ul>li:not(:first-of-type):hover {
+    background: #c3e5ea;
+  }
+  #wrap>ul>li>span:not(:first-of-type):hover {
+    background:#c3e5ea;
+  }
+  #wrap>ul>li:not(:first-of-type):hover>a {
+    color: #fff;
+  }
+  #wrap>ul>li:not(:first-of-type):hover>a>span{
+    color: #fff;
+  }
+  
+    /* #wrap>ul>li.on>a>span {
+      color:#000;
+    }
+   */
+    #wrap>ul>li:not(:first-of-type):hover {
+      background: #68a3ad;
+    }
+    #wrap>ul>li>span:not(:first-of-type):hover {
+      background: #ad9168;
+    }
+    #wrap>ul>li:not(:first-of-type):hover>a {
+      color: #fff;
+    }
+    #wrap>ul>li:not(:first-of-type):hover>a>span{
+      color: #fff;
+    }
+    #wrap>ul>li>#title {
+      background: #fff;
+      border-radius: 20px;
+    }
+    #wrap>ul>li>#title>div>a {
+      color: rgb(102, 88, 226);
+    }
+    #wrap>ul>li>#title>div>a>span {
+      color: rgb(102, 88, 226);
+    }
